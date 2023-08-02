@@ -1,3 +1,11 @@
+Promise.all([p1, p2])
+.finally((e) => {
+  console.log("error");
+});
+
+/// without try catch or then catch finally should work
+
+
 var p1 = new Promise((resolve, reject) => {
   resolve("give");
 });
